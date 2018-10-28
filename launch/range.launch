@@ -1,0 +1,8 @@
+<launch>
+  
+  <node pkg="range_measure" name="uart_node" type="uart_node" output="screen"></node>
+  <node pkg="range_measure" name="order_send" type="order_send" output="screen"></node>
+  <node pkg="range_measure" name="range_get" type="range_get" output="screen"></node>
+ 
+</launch>
+                        

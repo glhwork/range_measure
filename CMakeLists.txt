@@ -15,9 +15,34 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+catkin_package(
+
+)
+
 add_executable(range_main
   src/main.cpp
 )
 target_link_libraries(range_main
+  ${catkin_LIBRARIES}
+)
+
+add_executable(order_send
+  src/order_send.cpp
+)
+target_link_libraries(order_send
+  ${catkin_LIBRARIES}
+)
+
+add_executable(range_get
+  src/range_get.cpp
+)
+target_link_libraries(range_get
+  ${catkin_LIBRARIES}
+)
+
+add_executable(uart_node
+  src/uart_node.cpp
+)
+target_link_libraries(uart_node
   ${catkin_LIBRARIES}
 )
